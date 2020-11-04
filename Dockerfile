@@ -21,7 +21,7 @@ RUN apt-get install -y aria2
 RUN apt-get install -y nmap
 
 # 3) install packages
-RUN pip install --no-cache-dir geopandas babypandas
+RUN pip install geopandas babypandas
 
 # 4) change back to notebook user
 COPY /run_jupyter.sh /
